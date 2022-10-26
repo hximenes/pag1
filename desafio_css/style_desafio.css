@@ -1,0 +1,65 @@
+img {
+border-color: rgb(238, 176, 7);
+border-width: 6px;
+border-style: double;
+border-radius: 63%;
+}
+
+a {
+color: rgb(234, 118, 41);
+margin:right 50%;;
+
+}
+th {
+border-color: chocolate;
+border-width: 6px;
+border-style: double;
+
+
+}
+
+ul {
+border-color: rgb(238, 176, 7);
+border-width: 6px;
+border-style: outset;
+
+}
+
+table {
+border-color: rgb(238, 176, 7);
+border-width: 6px;
+border-style: double;
+background-color: lightsalmon;
+}
+
+
+td {
+border-color: rgb(238, 176, 7);
+border-width: 3px;
+border-style: double;
+
+}
+#A{
+border-color: black;
+border-width: 6px;
+border-style: solid;
+margin: 2px;
+}
+#AB{
+border-color: black;
+border-width: 6px;
+border-style: solid;
+margin: 2px;
+}
+#B{
+border-color: black;
+border-width: 6px;
+border-style: solid;
+margin: 2px;
+}
+#C{
+border-color: black;
+border-width: 6px;
+border-style: solid;
+margin: 2px;
+}
