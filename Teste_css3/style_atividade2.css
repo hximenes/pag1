@@ -1,0 +1,42 @@
+table{
+    color: red;
+    border-color: darkblue;
+    border-width: 2px;
+    border-style: outset;
+    border-radius: 50;
+}
+td{
+    color: red;
+    border-color: darkblue;
+    border-width: 2px;
+    border-style: outset;
+    border-radius: 50;
+}
+th{
+    color: red;
+    border-color: darkblue;
+    border-width: 2px;
+    border-style: outset;
+    border-radius: 50;
+}
+ul{
+    color: red;
+    border-color: darkblue;
+    border-width: 2px;
+    border-style: outset;
+    border-radius: 50;
+}
+li{
+    color: red;
+    border-color: rgb(3, 3, 19);
+    border-width: 2px;
+    border-style: outset;
+    border-radius: 50;
+}
+img{
+    color: red;
+    border-color: darkblue;
+    border-width: 2px;
+    border-style: outset;
+    border-radius: 50;
+}
