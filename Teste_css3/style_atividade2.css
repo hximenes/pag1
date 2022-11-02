@@ -1,42 +1,76 @@
 table{
-    color: red;
-    border-color: darkblue;
+    color: rgb(0, 0, 0);
+    border-color: rgb(103, 11, 160);
     border-width: 2px;
     border-style: outset;
     border-radius: 50;
 }
 td{
-    color: red;
-    border-color: darkblue;
+    color: rgb(0, 0, 0);
+    border-color: rgb(103, 11, 160);
     border-width: 2px;
     border-style: outset;
     border-radius: 50;
 }
 th{
-    color: red;
-    border-color: darkblue;
+    color: rgb(0, 0, 0);
+    border-color: rgb(103, 11, 160);
     border-width: 2px;
     border-style: outset;
     border-radius: 50;
 }
 ul{
-    color: red;
-    border-color: darkblue;
+    color: rgb(0, 0, 0);
+    border-color: rgb(103, 11, 160);
     border-width: 2px;
     border-style: outset;
     border-radius: 50;
 }
 li{
-    color: red;
-    border-color: rgb(3, 3, 19);
+    color: rgb(0, 0, 0);
+    border-color: rgb(103, 11, 160);
     border-width: 2px;
     border-style: outset;
     border-radius: 50;
 }
 img{
-    color: red;
-    border-color: darkblue;
+    color: rgb(0, 0, 0);
+    border-color: rgb(103, 11, 160);
     border-width: 2px;
     border-style: outset;
     border-radius: 50;
+    width: 300px;
+    height: 300px;
+}
+header{  height: 80px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center ;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    background-color: rgb(103, 11, 160);
+    border-radius: 10px;
+}
+.div_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.img_header{
+    width: 50px;
+     height: 50px;
+     border-radius: 50%;
+}
+h1{ color: floralwhite;
+margin: 5px;
+}
+a{
+    margin: 5px;
+    color: white;
+}
+.div_table{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
