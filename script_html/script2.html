@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exemplo com Script</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <form id="formulario">
+        <h2 id="demo"></h2>
+        <input type="number" placeholder="Digite um número" id="number1">
+        <input type="number" placeholder="Digite um número" id="number2">
+        <input type="number" placeholder="Digite um número" id="number3">
+        <input type="submit" value="Enviar">
+    </form>
+
+    <script>
+        // Pegando dados do input pelo docID
+        var form = document.getElementById('formulario');
+        let num1 = document.getElementById('number1'); // obj 
+        let num2 = document.getElementById('number2');
+        let num3 = document.getElementById('number3');
+        
+        
+
+        form.addEventListener('submit', function(e) {
+            //Passando somente o value para as variaveis
+            let n1 = num1.value // int
+            let n2 = num2.value // int
+            let n3 = num3.value // int
+            let maior = 0;
+            let meio =0;
+            let menor= 0;
+
+            // Identificando o maior
+            if(n1>n2 && n1>n3){
+                maior = n1
+            }
+            else{
+                if(n2>n3){
+                maior = n2
+            }
+                else{
+                    maior = n3
+                }
+            }
+                // Identificando Meio e Menor para o caso N1 MAIOR
+                if(n1===maior){
+                    if(n2>n3){
+                        meio = n2
+                        menor = n3
+                    }
+                    else{
+                        meio = n3
+                        menor = n2
+                    }
+                }
+                else{
+                    // Identificando Meio e Menor para o caso N2 MAIOR
+                     if(n2===maior)
+                    {
+                        if(n1>n3){
+                        meio = n1
+                        menor = n3
+                     } 
+                    else{ 
+                       meio = n3
+                       menor = n1 
+                    }
+                    }
+                    else{
+                        // Identificando Meio e Menor para o caso N3 MAIOR
+                        if(n1>n2){
+                            meio = n1
+                            menor = n2
+                        }
+                        else{
+                            meio = n2
+                            menor = n1
+                        }
+                    }
+                }
+            document.getElementById("demo").innerHTML = 'Maior='+maior+' Meio='+meio+' Menor='+menor;
+    e.preventDefault();
+});
+    </script>
+</body>
+
+</html>
