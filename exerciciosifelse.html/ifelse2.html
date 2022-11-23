@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exemplo com Script</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <form id="formulario">
+        <h2 id="demo"></h2>
+        <input type="number" placeholder="Digite um número" id="number1">
+        <input type="number" placeholder="Digite um número" id="number2">
+        <input type="submit" value="Enviar">
+    </form>
+
+    <script>
+        // Pegando dados do input pelo docID
+        var form = document.getElementById('formulario');
+        let num1 = document.getElementById('number1'); // obj 
+        let num2 = document.getElementById('number2'); // obj 
+  
+        
+        
+
+        form.addEventListener('submit', function(e) {
+            //Passando somente o value para as variaveis
+            let n1 = num1.value // int
+            let n2 = num2.value // int
+            let maior = 0;
+            let menor =0;
+             // Identificando o maior
+
+         if( n1==n2){ 
+                alert( " os valores são iguais ")
+            }
+        else{
+            if(n1>n2){
+                maior=n1 
+                menor=n2
+            } 
+
+            else{
+                maior=n2
+                menor=n1
+            }
+            document.getElementById("demo").innerHTML = 'Maior='+maior+ ' Menor='+menor;
+        }
+                
+    e.preventDefault();
+});
+    </script>
+</body>
+
+</html>
